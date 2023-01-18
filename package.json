@@ -1,0 +1,37 @@
+{
+  "name": "svn-publish",
+  "version": "1.0.0",
+  "description": "publish files to svn",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ASpurple/real-dom.git"
+  },
+  "bin": {
+    "svnp": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc && node ./scripts/index.js",
+    "preview": "tsc && node ./scripts/index.js && node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SVN",
+    "svn publish",
+    "automation"
+  ],
+  "author": "zhou_hanlin",
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.9"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.0",
+    "@types/node": "^18.11.15"
+  }
+}

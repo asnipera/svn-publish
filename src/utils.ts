@@ -7,7 +7,7 @@ export class Config {
     constructor(repo = '/') {
         this.remoteDirectory = repo;
     }
-    localDirectory: string = path.join(__dirname, 'dist');
+    localDirectory: string = path.join(process.cwd(), 'dist');
     remoteDirectory: string = '/';
     compress: boolean = true;
     zipFileName: string = 'dist.zip';
@@ -22,7 +22,7 @@ const comments: Record<keyof Config, string> = {
 
 export const CONFIG_FILE_NAME = '.svn-pub';
 
-export const CONFIG_FILE_PATH = path.join(__dirname, CONFIG_FILE_NAME);
+export const CONFIG_FILE_PATH = path.join(process.cwd(), CONFIG_FILE_NAME);
 
 export function readConfig():Config | null {
     const conf = new Config();
@@ -103,7 +103,7 @@ export function zip(dir: string, outputFileName: string): string {
             admZip.addLocalFolder(p);
         }
     });
-    const output = path.join(__dirname, outputFileName);
+    const output = path.join(dir, outputFileName);
     admZip.writeZip(output);
     return output;
 }

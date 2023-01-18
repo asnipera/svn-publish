@@ -1,4 +1,4 @@
-# svn-publish
+# svnp
 自动将指定目录或文件发布到远程svn仓库，目前仅支持Windows系统。
 
 # cli

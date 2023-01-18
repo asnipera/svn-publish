@@ -1,18 +1,19 @@
 {
-  "name": "svn-publish",
-  "version": "1.0.0",
+  "name": "svnp",
+  "version": "1.0.2",
   "description": "publish files to svn",
-  "main": "./dist/index.js",
-  "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist/"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ASpurple/real-dom.git"
+    "url": "https://github.com/ASpurple/svn-publish"
   },
   "bin": {
     "svnp": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">= 14"
   },
   "scripts": {
     "dev": "tsc --watch",

@@ -11,5 +11,5 @@
 ### svnp
 根据配置文件发布指定目录或文件到远程SVN仓库，提交信息默认为 "update"
 
-### svnp -m test publiush
-根据配置文件发布指定目录或文件到远程SVN仓库，自定义提交信息为 "test publiush"
+### svnp -m test publish
+根据配置文件发布指定目录或文件到远程SVN仓库，自定义提交信息为 "test publish"
